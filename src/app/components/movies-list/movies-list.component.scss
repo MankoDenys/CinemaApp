@@ -1,0 +1,26 @@
+.movies {
+    display: grid;
+    // border: 1px solid #333;
+    height: 600px;
+    width: 950px;
+    grid-gap: 2vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    float: left;
+  
+}
+.poster .badge {
+    position: absolute;
+    bottom: 0%;
+}
+
+.poster {
+    width: 160px;
+    height: 260px;
+    border: 2px solid blue;
+    position: relative;
+    cursor: pointer;
+}
+
