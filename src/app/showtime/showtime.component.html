@@ -1,0 +1,24 @@
+<h3>Розклад сеансів</h3>
+
+<div class="showtime">
+  <div class="showtimeFor" *ngFor="let movie of movies">
+      <div class="showtimeWeek">
+          <div class="showtimeTitle">{{movie.title}}</div>
+          <div class="showtimeWeekDate">
+              <div class="showtimeWeekDateFor" *ngFor="let shwtD of showtimeDates">
+                <div class="">{{shwtD.date}} {{shwtD.times}}</div>
+            </div>
+          </div>
+          <!-- <div class="showtimeWeekDate">
+              <div class="showtimeWeekDateFor" *ngFor="let shwtD of showtimeDates">
+                <div class="">{{shwtD.date}}</div>
+            </div>
+          </div> -->
+        </div>
+  <a routerLink="/info/{{movie.id}}">
+  <img class="showtimePoster" src="{{movie.image}}"/>
+  </a>
+  </div>
+
+  
+</div>

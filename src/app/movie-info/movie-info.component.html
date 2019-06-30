@@ -1,6 +1,18 @@
-<aside class="details">
-  <div *ngIf="movie">
-    <h2>{{movie.title | uppercase}}</h2>
-    <div class="movieRental">{{movie.rental}}</div>
+
+  <div class="movie" *ngIf="movie">
+    
+    <img class="brochure-poster" src="{{movie.backImg}}"/>
+    <div class="movieInf">
+      <h2>{{movie.title | uppercase}}</h2>
+      
+      <div class="movieInform">Жанр: <br>{{movie.genre}}</div>
+      <div class="movieInform">У головних ролях: <br>{{movie.leadRoles}}</div>
+      <div class="movieInform">Режисер: <br>{{movie.director}}</div>
+      <div class="movieInform">Прокат: <br>{{movie.rental}}</div>
+      <div class="movieInform">Тривалість: <br>{{movie.duration}}</div>
+      <div class="movieInform">Вікові обмеження: <br>{{movie.ageLimit}}</div>
+      <button class="goBackButton" (click)="goBack()">Back</button>
+    </div>
+    
   </div>
-</aside>
+

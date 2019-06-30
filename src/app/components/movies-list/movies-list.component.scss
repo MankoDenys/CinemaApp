@@ -1,19 +1,29 @@
+h3 {
+    color: #77A2AC;
+}
 .movies {
     display: grid;
     // border: 1px solid #333;
-    height: 600px;
-    width: 950px;
+    height: 100%;
+    width: 100%;
     grid-gap: 2vw;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
     float: left;
+    background-color: #172029;
+    color: #3CB4E7;
   
 }
 .poster .badge {
+    width: 160px;
     position: absolute;
     bottom: 0%;
+    left: 0%;
+    // margin-left: -50%;
+    // transform: translate(-50%);
+    text-align: center;
 }
 
 .poster {
@@ -22,5 +32,6 @@
     border: 2px solid blue;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
 }
 

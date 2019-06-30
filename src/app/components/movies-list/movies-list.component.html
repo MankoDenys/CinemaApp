@@ -1,15 +1,18 @@
-<h2>Movies Today</h2>
+<h3>Зараз у кiно</h3>
 
 <div class="movies">
-  <div class="poster" *ngFor="let movie of movies" 
-  [class.selected]="movie === selectedMovie"
-  (click)="onSelect(movie)">
-    <span class="badge">{{movie.title}}</span> {{movie.poster}}
+  <div class="poster" *ngFor="let movie of movies">
+  <!-- (click)="onSelect(movie)"> -->
+  <a routerLink="/info/{{movie.id}}">
+  <img class="brochure-poster" src="{{movie.image}}"/>
+   
+    <div class="badge">{{movie.title}}</div>
+  </a>
   </div>
 </div>
 
 
-<app-movie-info [movie]="selectedMovie"></app-movie-info>
+<!-- <app-movie-info [movie]="selectedMovie"></app-movie-info> -->
 
 
 
