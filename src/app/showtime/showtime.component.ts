@@ -21,7 +21,7 @@ export class ShowtimeComponent implements OnInit {
   ngOnInit(){
     this.getMovie(),
     this.getDate();
-    // this.getTime();
+    this.getTime();
   }
 
   getMovie(): void {
@@ -34,10 +34,10 @@ export class ShowtimeComponent implements OnInit {
     .subscribe(showtimeDates => this.showtimeDates = showtimeDates);
   }
 
-  // getTime(): void {
-  //   this.movieService.getTime()
-  //   .subscribe(showtimeTimes => this.showtimeTimes = showtimeTimes);
-  // }
+  getTime(): void {
+    this.movieService.getTime()
+    .subscribe(showtimeTimes => this.showtimeTimes = showtimeTimes);
+  }
 
 
 }

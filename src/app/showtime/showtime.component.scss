@@ -1,3 +1,6 @@
+h3 {
+    color: #77A2AC;
+}
 .showtime {
     background-color: #172029;
     position: relative;
@@ -5,6 +8,7 @@
 }
 .showtimeFor {
     margin: 10px;
+    height: 290px;
   
 }
 .showtimeWeek {
@@ -14,9 +18,28 @@
     // border: 1px solid black;
     position: absolute;
     width: 500px;
-    height: 235px;
+    height: 270px;
     padding-top: 5px;
   
+}
+.showtimeWeekTimeForTime {
+    border: 1px solid black;
+    cursor: pointer;
+}
+.showtimeWeekTimeForTime:hover {
+    background: rgb(165, 155, 13);
+}
+.showtimeWeekTime {
+    display: grid;
+    // border: 1px solid black;
+    // height: 100%;
+    // width: 100%;
+    grid-gap: 2vw;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+    
 }
 // .showtimeWeekDate {
 //     height: 230px;

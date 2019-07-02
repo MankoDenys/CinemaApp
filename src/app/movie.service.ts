@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs';
 import { listOfDateTime } from "./list-of-date-time";
 import { ShowtimeDate } from "./interface/showtimeDate";
 import { ShowtimeTime } from "./interface/showtimeTime";
+import { listOfTime } from "./list-of-time";
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +26,7 @@ export class MovieService {
     return of(listOfDateTime);
   }
 
-  // getTime(): Observable<ShowtimeTime[]> {
-  //   return of(listOfDateTime);
-  // }
+  getTime(): Observable<ShowtimeTime[]> {
+    return of(listOfTime);
+  }
 }

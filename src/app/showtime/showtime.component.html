@@ -5,8 +5,13 @@
       <div class="showtimeWeek">
           <div class="showtimeTitle">{{movie.title}}</div>
           <div class="showtimeWeekDate">
-              <div class="showtimeWeekDateFor" *ngFor="let shwtD of showtimeDates">
-                <div class="">{{shwtD.date}} {{shwtD.times}}</div>
+              <div class="showtimeWeekDateFor" *ngFor="let shwtd of showtimeDates">
+                <div class="showtimeWeekDateForDate">{{shwtd.date}} </div>
+                <div class="showtimeWeekTime">
+                    <div class="showtimeWeekTimeFor" *ngFor="let shwtt of showtimeTimes">
+                      <div class="showtimeWeekTimeForTime">{{shwtt.time}} </div>
+                    </div>
+                  </div>
             </div>
           </div>
           <!-- <div class="showtimeWeekDate">
